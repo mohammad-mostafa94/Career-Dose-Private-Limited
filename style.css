@@ -1,0 +1,91 @@
+.background-style{
+    background-color: rgb(209, 212, 211);
+}
+
+/* Company name text style start */
+.company-name {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 3rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	text-align: center;
+	color: #4ff326;
+	background-image: -webkit-linear-gradient(92deg, #f35626, #57cc21da);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-animation: hue 10s infinite linear;
+    
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+/* Company name text style end */
+
+
+
+/* main image style start */
+
+.image-style{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.image-style img {
+    transform: scale(1);
+    transition: 1.5s ease-in-out;
+  }
+
+  .image-style:hover img {
+    transform: scale(1.2);
+  }
+
+  /* main image style end */
+
+
+    /* Media query start */
+
+    /* Firstly small devices then other devices */
+  @media (min-width: 320px) {
+    .main-image-style {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .company-name {
+      font-size: 1rem;
+    }
+  }
+  
+  
+  @media (min-width: 768px) {
+    .company-name {
+      font-size: 2.5rem;
+    }
+  }
+  
+ 
+  @media (min-width: 1024px) {
+    .main-image-style {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+    .company-name {
+      font-size: 3rem;
+    }
+}
+
+/* Media query end */
+  
